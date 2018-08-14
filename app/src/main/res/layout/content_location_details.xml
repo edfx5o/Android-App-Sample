@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LocationDetailsActivity"
+    tools:showIn="@layout/activity_location_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/white">
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/machine_gross_chart"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@color/white"
+                android:layout_marginBottom="4dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_sub_head_history"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="10dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/rect_shape">
+
+            <TableRow
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_column="1"
+                    android:text="Date"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_column="2"
+                    android:text="Collector"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"/>
+                <TextView
+                    android:layout_column="3"
+                    android:text="Collection"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="sans-serif-black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_column="1"
+                    android:text="xx/xx/xx"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_column="2"
+                    android:text="Deandra Wallace"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_column="3"
+                    android:text="$ 000000"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_column="1"
+                    android:text="xx/xx/xx"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_column="2"
+                    android:text="Mandy Mollineau"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_column="3"
+                    android:text="$ 000000"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_column="1"
+                    android:text="xx/xx/xx"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_column="2"
+                    android:text="Obi-wan Kenobi"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_column="3"
+                    android:text="$ 000000"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"/>
+            </TableRow>
+
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_sub_head_location_collection"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_right"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Previous"
+                    android:textAllCaps="true"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="$ 79,476"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorGold"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Current"
+                    android:layout_marginLeft="10dp"
+                    android:textAllCaps="true"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="$ 46,987"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/offlineRed"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_sub_head_location_gross"
+            android:textAllCaps="true"
+            android:textSize="10dp" />
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
